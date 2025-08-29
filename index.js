@@ -12,7 +12,7 @@ for (let i = 0; i < elements.length; i++) {
          document.getElementById("coins").innerHTML=new_coins + `<img class="max-w-5" src="/assets/coin.png">`;
          
 
-         const parentCard = this.closest(".p-8");
+         const parentCard = this.closest(".p-6");
          const serviceName = parentCard.querySelector("h3").innerText;
          const serviceNumber = parentCard.querySelector("h1").innerText;
 
@@ -66,12 +66,12 @@ const copyButtons = document.getElementsByClassName("copy");
 for (let i = 0; i < copyButtons.length; i++) {
     copyButtons[i].addEventListener("click", function () {
         // 1) Find the number inside the same card
-        const parentCard = this.closest(".p-8"); 
+        const parentCard = this.closest(".p-6"); 
         const number = parentCard.querySelector("h1").innerText; 
 
         // 2) Copy number to clipboard
         navigator.clipboard.writeText(number).then(() => {
-        console.log("Copied:", number);
+        alert("Number copied");
 
         const copy = parseInt(document.getElementById("copies").innerText);
 

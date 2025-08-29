@@ -26,7 +26,7 @@ for (let i = 0; i < elements.length; i++) {
          const historyContainer = document.getElementById("history-container")
          for (data of callHistory){
             const div = document.createElement("div");
-            div.innerHTML=`<div class="w-[352px] h-20 bg-gray-100 flex items-center justify-between mx-6 mt-2 rounded-xl">
+            div.innerHTML=`<div class="w-full h-20 bg-gray-100 flex items-center justify-between px-4 mt-2 rounded-xl">
                 <div class="m-4">
                   <h1 class="text-xl font-bold">${historyData.name}</h1>
                   <p>${historyData.number}</p>
